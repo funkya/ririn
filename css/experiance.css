@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'ActionManRegular';
+	src: url('Action-Man/Action-Man/Action_Man-webfont.eot');
+	src: url('Action-Man/Action-Man/Action_Man-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('Action-Man/Action-Man/Action_Man-webfont.woff') format('woff'),
+		 url('Action-Man/Action-Man/Action_Man-webfont.ttf') format('truetype'),
+		 url('Action-Man/Action-Man/Action_Man-webfont.svg#ActionManRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.isi{
+	width: 1000px;
+	height:auto;
+	border :2px solid black;
+	margin: 80px auto;
+	background-image: url(img/Untitled-3.png);
+	background-repeat: no-repeat;
+
+}
+
+h1{
+	font-family: ActionManRegular;
+	font-size: 30px;
+	margin-bottom: 10px;
+	float: center;
+	margin-top: 100px;
+	margin-left: 520px;
+}
+li {
+	font-size: 25px;
+	font-family: ActionManRegular;
+	margin-bottom: 10px;
+	float: center;
+	margin-top: 10px;
+	margin-left: 70px;
+}
+

@@ -1,0 +1,103 @@
+@font-face {
+	font-family: 'ActionManRegular';
+	src: url('Action-Man/Action-Man/Action_Man-webfont.eot');
+	src: url('Action-Man/Action-Man/Action_Man-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('Action-Man/Action-Man/Action_Man-webfont.woff') format('woff'),
+		 url('Action-Man/Action-Man/Action_Man-webfont.ttf') format('truetype'),
+		 url('Action-Man/Action-Man/Action_Man-webfont.svg#ActionManRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.menu {
+	width: 1000px;
+	height:500;
+
+	margin: 80px auto;
+	background-image: url(../img/Untitled-3.png);
+	background-repeat: no-repeat;
+
+}
+
+.card {
+	list-style: none;
+	padding: 0px;
+	position: relative;
+	top: 130px;
+	margin: 20px;
+	left: 40px;
+}
+.card img {
+	width: 150px;
+	height: 250px;
+	border : 3px solid black;
+	border-radius: 10px;
+	
+}
+.card p {
+	font-family: ActionManRegular;
+	padding: 10px 0px;
+	text-align: center;
+	color: black;
+	position: absolute;
+	margin-left: 30px;
+	font-size: 20px;
+
+
+}
+
+.card li {
+	display: inline;
+	margin-right: 25px;
+	float: left;
+}
+
+.card li a {
+	text-decoration: none;
+
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 150px;
+	height: 250px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.30s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+.back {
+
+}

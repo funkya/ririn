@@ -1,0 +1,189 @@
+@font-face {
+	font-family: 'ActionManRegular';
+	src: url('Action-Man/Action-Man/Action_Man-webfont.eot');
+	src: url('Action-Man/Action-Man/Action_Man-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('Action-Man/Action-Man/Action_Man-webfont.woff') format('woff'),
+		 url('Action-Man/Action-Man/Action_Man-webfont.ttf') format('truetype'),
+		 url('Action-Man/Action-Man/Action_Man-webfont.svg#ActionManRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font-family: ActionManRegular;
+	background: white;
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
+}
+
+#topbar{					
+	width: 100%;
+	height :130px;
+	background-image: url(../img/Untitled-10.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: black;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+	border :1px solid black;
+}
+
+
+#topnav {					
+	position: relative;
+	width: 740px;
+	left: 314px;
+
+}
+.toplogo {					
+	position: absolute;
+	left: -48px;
+	top: 4px;
+}
+.toplogo a {
+	 width: 116px;
+	 height: 40px;
+	 display: block;
+	 text-indent: -9999;
+}
+.link {						
+	position: absolute;
+	list-style: none;
+	padding: 0px;
+	z-index: 2;
+	margin-top: 90px;
+
+}
+.link li {					
+	float: left;
+	margin: 0px;
+	margin-right: 5px;
+}
+.link li a {				
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: arial;
+	color:#999;
+	text-decoration: none;
+	letter-spacing: 1px;
+	margin-right: 20px;
+
+}
+.link li.current a {		
+	color: white;
+	font-family: ActionManRegular;
+	font-size: 25px;
+	margin-bottom: 100px;
+
+}
+.link li a:hover {			
+	color: white;
+}
+
+.social {						
+	list-style: none;
+	padding: 0px;
+	position: absolute;
+	right: 1000px;
+	top:140px;
+	left: -280px;
+	float: right;
+}
+.social li {				
+	display: inline;
+	margin-right: 10px;
+}
+.social li a {				
+	text-decoration: none; 
+}
+.social img {
+	width: 50px;
+	height:50px;
+}
+	
+.link li ul {				
+	display: none;
+	position: absolute;
+	width: 80px;
+	background-color: #333;
+	list-style: none;
+}
+.link li:hover ul {			
+	display: block;
+	padding: 20px;
+}
+.link li:hover ul li {		
+	line-height: 30px;
+}
+.link li:hover ul li a {	
+	font-size: 11px;
+}
+
+
+#submenu {					
+	position: absolute;
+	width: 740px;
+	margin: 0 auto;
+	height: 30px;
+	top: 54px;
+	left: 170px;
+}
+.search {					
+	float: right;
+}
+.searchtext {				
+	width: 230px;
+	height: 29px;
+	float: left;
+	padding: 0px 0px 0px 10px;
+	background-image: url(../img/search-bg.png);
+	border:0;
+	margin: 0;
+}
+.searchsubmit {
+	cursor: pointer;
+	float: right;
+	position: relative;
+	padding: 0;
+	border:0;
+	margin: 0;
+	color: #ccc;
+	width: 40px;
+	height: 29px;
+	text-indent: -9999px;
+	background-image: url(../img/search-btn.png);
+}
+
+
+
+
+#page-wrap {
+	width: 1000px;
+	margin: 100px auto ;
+	padding: 50px;
+	height: auto;
+}
+
+#back {
+	float: left;
+	position: relative;
+	left: 0px;
+	z-index: -9999;
+	margin-left: -50px;
+}
+#back img {
+	width: 300px;
+	height: 700px;
+}
+#skill {
+	float: right;
+	position: relative;
+	left: 0px;
+	z-index: -9999;
+	margin-left: -50px;
+}
+#skill img {
+	width: 800px;
+	height: 700px
+}
